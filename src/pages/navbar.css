@@ -1,0 +1,81 @@
+/* Navbar.css */
+.navbar-custom {
+  background-color: #f8f9fa; /* Light background color */
+  border-bottom: 2px solid #e9ecef; /* Light border at the bottom */
+  transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out; /* Smooth transition for background and border */
+}
+
+.brand-custom {
+  margin-left: 200px;
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: #ffffff; /* Brand text color */
+  transition: color 0.3s ease-in-out; /* Smooth transition for brand text color */
+}
+
+.navbar-custom .navbar-brand {
+  color: #3962de; /* Dark color for brand text */
+  font-size: x-large;
+  transition: color 0.3s ease-in-out; /* Smooth transition for color */
+}
+
+.navbar-custom .nav-link {
+  color: black; 
+  margin: 0 15px; /* Spacing between links */
+  font-weight: bold;
+  font-size: larger;
+  position: relative;
+  transition: color 0.3s ease-in-out; /* Smooth transition for link color */
+}
+
+.navbar-custom .nav-link:hover {
+  color: #18d8e6; /* Blue color on hover */
+}
+
+.navbar-custom .nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #18d8e6; /* Blue underline effect */
+  transition: width 0.3s ease-in-out; /* Smooth transition for underline */
+}
+
+.navbar-custom .nav-link:hover::after {
+  width: 100%; /* Full underline on hover */
+}
+
+.navbar-custom .navbar-toggler-custom {
+  border: none; /* Remove default border */
+  background-color: transparent; /* Transparent background for the button */
+  transition: transform 0.3s ease-in-out; /* Animation for toggler */
+}
+
+.navbar-custom .navbar-toggler-custom:hover {
+  transform: rotate(90deg); /* Rotate effect on hover */
+}
+
+.navbar-custom .navbar-toggler-icon {
+  
+  background-image: url('../assets/Gemini_Generated_Image_wik6y5wik6y5wik6-removebg-preview.png'); /* Relative path to the image file */
+
+}
+
+.navbar-custom .navbar-collapse {
+  justify-content: center; /* Center align the menu items */
+  animation: fadeIn 0.5s ease-in-out; /* Fade-in animation for the menu */
+}
+
+/* Keyframes for the fadeIn effect */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px); /* Slight upward movement */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
